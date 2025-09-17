@@ -1,5 +1,4 @@
 import { memo } from "react"
-import { useMemo } from "react"
 
 // reminder for later fix it with useMemo for now the fix that i did dint work
 
@@ -9,27 +8,12 @@ type ChildProps = {
 
 const ChildB = ({children}:ChildProps) => {
 
-  if(!children) return;
-
-  const computedChildren = useMemo(() => {
-
-    return children.map((item) => item * 2)
-
-  },[children])
-
-  console.log(children)
-
+  console.log("ChildB render")
   return (
     <div>
-      <ul>
-      {
-        computedChildren.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))
-      }
-      </ul>
+      {children}
     </div>
   )
 }
 
-export default ChildB
+export default memo(ChildB)
