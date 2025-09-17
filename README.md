@@ -1,6 +1,6 @@
 # React Performance best practices Theory
 
-1 - React’s Rendering Model
+## 1 - React’s Rendering Model
 
 React uses a virtual DOM (VDOM) to decide what should change in the actual DOM.
 
@@ -18,7 +18,7 @@ Theory takeaway → Optimize when and how often components render.
 
 ---
 
-2 - Reconciliation and Component Re-renders
+## 2 - Reconciliation and Component Re-renders
 
 React tries to re-render the minimal amount of UI.
 
@@ -36,7 +36,7 @@ Theory takeaway → Minimize wasted renders by controlling identity (===) and sc
 
 ---
 
-3 - State Management & Granularity
+## 3 - State Management & Granularity
 
 React re-renders all children of a component when its state changes.
 
@@ -54,7 +54,7 @@ Theory takeaway → Keep state as small and local as possible to reduce re-rende
 
 ---
 
-4 - Expensive Computations
+## 4 - Expensive Computations
 
 React re-executes the component function on each render.
 
@@ -72,7 +72,7 @@ Theory takeaway → Prevent re-running expensive logic during normal renders.
 
 ---
 
-5 - List Rendering & Keys
+## 5 - List Rendering & Keys
 
 Rendering lists (.map()) can be costly if React can’t identify which items changed.
 
@@ -88,7 +88,7 @@ Theory takeaway → Good keys allow React to reuse DOM nodes instead of re-creat
 
 ---
 
-6 - Code Splitting & Lazy Loading
+## 6 - Code Splitting & Lazy Loading
 
 By default, React apps bundle everything into one big JS file.
 
@@ -104,7 +104,7 @@ Theory takeaway → Smaller bundles = faster startup, better perceived performan
 
 ---
 
-7 - Avoiding Unnecessary DOM Work
+## 7 - Avoiding Unnecessary DOM Work
 
 React updates the DOM in batches, but certain practices (e.g., forcing layout recalculations) hurt performance.
 
@@ -120,7 +120,7 @@ Theory takeaway → DOM updates are expensive; let React’s batching handle the
 
 ---
 
-8 - Concurrent Rendering (React 18+)
+## 8 - Concurrent Rendering (React 18+)
 
 React 18 introduced concurrent features like useTransition and startTransition.
 
@@ -130,7 +130,7 @@ Theory takeaway → Prioritize user interactions over background updates.
 
 ---
 
-9 - Measuring Performance
+## 9 - Measuring Performance
 
 Guessing is dangerous; always measure.
 
