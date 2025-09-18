@@ -8,13 +8,15 @@ import RedundantState from './exercises/ReactRenderingModel/derivedState/Redunda
 import ExpensiveComponent from './exercises/ReactRenderingModel/expensiveComponent/ExpensiveComponent'
 import OptimizedComponent from './exercises/ReactRenderingModel/expensiveComponent/OptimizedComponent'
 import OptimizedUseMemo from './exercises/ReactRenderingModel/expensiveComponent/OptimizedUseMemo'
+import FunctionCausingReRenders from './exercises/ReconciliationAndReRenders/useCallback/FunctionCausingReRender'
+import FixWithCallback from './exercises/ReconciliationAndReRenders/useCallback/FixWithCallback'
 
 function App() {
 
   return (
     <>
     {/* <ReRender/> */}
-    
+
     {/* <PreventReRenders/> */}
 
     {/* <IdentityTrap/> */}
@@ -24,9 +26,12 @@ function App() {
     {/* <DerivedState/> */}
     {/* <RedundantState/> */}
 
-    <ExpensiveComponent/>
+    {/* <ExpensiveComponent/>
     <OptimizedComponent/>
-    <OptimizedUseMemo/>
+    <OptimizedUseMemo/> */}
+
+    <FunctionCausingReRenders/>
+    <FixWithCallback/>
     </>
   )
 }
