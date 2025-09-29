@@ -12,6 +12,8 @@ import FunctionCausingReRenders from './exercises/ReconciliationAndReRenders/use
 import FixWithCallback from './exercises/ReconciliationAndReRenders/useCallback/FixWithCallback'
 import BadState from './exercises/ReconciliationAndReRenders/liftingState/BadState'
 import EfficientState from './exercises/ReconciliationAndReRenders/liftingState/EfficientState'
+import BigState from './exercises/GranularityNStateManagement/bigState-SplitState/BigState'
+import SplitState from './exercises/GranularityNStateManagement/bigState-SplitState/SplitState'
 
 function App() {
 
@@ -35,8 +37,11 @@ function App() {
     {/* <FunctionCausingReRenders/>
     <FixWithCallback/> */}
 
-    <BadState/>
-    <EfficientState/>
+    {/* <BadState/>
+    <EfficientState/> */}
+
+    <BigState/>
+    <SplitState/>
     </>
   )
 }
