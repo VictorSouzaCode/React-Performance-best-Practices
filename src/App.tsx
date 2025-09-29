@@ -10,6 +10,8 @@ import OptimizedComponent from './exercises/ReactRenderingModel/expensiveCompone
 import OptimizedUseMemo from './exercises/ReactRenderingModel/expensiveComponent/OptimizedUseMemo'
 import FunctionCausingReRenders from './exercises/ReconciliationAndReRenders/useCallback/FunctionCausingReRender'
 import FixWithCallback from './exercises/ReconciliationAndReRenders/useCallback/FixWithCallback'
+import BadState from './exercises/ReconciliationAndReRenders/liftingState/BadState'
+import EfficientState from './exercises/ReconciliationAndReRenders/liftingState/EfficientState'
 
 function App() {
 
@@ -30,8 +32,11 @@ function App() {
     <OptimizedComponent/>
     <OptimizedUseMemo/> */}
 
-    <FunctionCausingReRenders/>
-    <FixWithCallback/>
+    {/* <FunctionCausingReRenders/>
+    <FixWithCallback/> */}
+
+    <BadState/>
+    <EfficientState/>
     </>
   )
 }
