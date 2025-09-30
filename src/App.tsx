@@ -14,6 +14,8 @@ import BadState from './exercises/ReconciliationAndReRenders/liftingState/BadSta
 import EfficientState from './exercises/ReconciliationAndReRenders/liftingState/EfficientState'
 import BigState from './exercises/GranularityNStateManagement/bigState-SplitState/BigState'
 import SplitState from './exercises/GranularityNStateManagement/bigState-SplitState/SplitState'
+import OneBigContext from './exercises/GranularityNStateManagement/ContextGranularity/OneBigContext'
+import SplitContexts from './exercises/GranularityNStateManagement/ContextGranularity/SplitContexts'
 
 function App() {
 
@@ -40,8 +42,11 @@ function App() {
     {/* <BadState/>
     <EfficientState/> */}
 
-    <BigState/>
-    <SplitState/>
+    {/* <BigState/>
+    <SplitState/> */}
+
+    {/* <OneBigContext/> */}
+    <SplitContexts/>
     </>
   )
 }

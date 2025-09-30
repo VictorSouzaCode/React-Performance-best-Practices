@@ -16,6 +16,11 @@ import BadButton from "./BadButton"
 // Because the parent re-renders, both A and B display elements re-render even though only A changed.
 // With many counters → huge wasted work.
 
+// When to Choose Which
+// Keep state high if you need to:
+// Share data between multiple components
+// Persist or sync it (e.g., saving to a server).
+
 const BadState = () => {
 
   type CountResults = {

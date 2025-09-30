@@ -19,9 +19,9 @@ import EfficientButton from "./EfficientButton"
 // Not too low (making components isolated but duplicating logic).
 // Not too high (causing global re-renders).
 
-// Takeaway
-/* Think of React re-renders like ripples in water. The higher you lift state, the bigger the ripple effect. Keep state as close as possible to where it’s used to minimize wasted re-renders.
-*/
+// When to Choose Which
+// Localize state if:
+// t only matters to a single UI piece (like a toggle, dropdown open/close, or input value).
 
 const EfficientState = () => {
   const [counts, setCounts] = useState(0)
