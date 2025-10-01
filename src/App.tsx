@@ -16,6 +16,7 @@ import BigState from './exercises/GranularityNStateManagement/bigState-SplitStat
 import SplitState from './exercises/GranularityNStateManagement/bigState-SplitState/SplitState'
 import OneBigContext from './exercises/GranularityNStateManagement/ContextGranularity/OneBigContext'
 import SplitContexts from './exercises/GranularityNStateManagement/ContextGranularity/SplitContexts'
+import SplitComponent from './exercises/GranularityNStateManagement/ContextGranularity/RealWorldExample/SplitComponent'
 
 function App() {
 
@@ -46,7 +47,8 @@ function App() {
     <SplitState/> */}
 
     {/* <OneBigContext/> */}
-    <SplitContexts/>
+    {/* <SplitContexts/> */}
+    {/* <SplitComponent/> */}
     </>
   )
 }
