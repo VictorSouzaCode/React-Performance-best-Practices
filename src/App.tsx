@@ -20,6 +20,8 @@ import SplitComponent from './exercises/GranularityNStateManagement/ContextGranu
 import StoringDerived from './exercises/GranularityNStateManagement/derivedStateNStoredState/StoringDerived'
 import UsingDerived from './exercises/GranularityNStateManagement/derivedStateNStoredState/UsingDerived'
 import LazyComponent from './exercises/lazyLoading-CodeSpliting/lazy/LazyComponent'
+import AllPages from './exercises/routeBase-CodeSplitting/AllPages'
+
 
 function App() {
 
@@ -56,7 +58,9 @@ function App() {
     {/* <StoringDerived/>
     <UsingDerived/> */}
 
-    <LazyComponent/>
+    {/* <LazyComponent/> */}
+
+    <AllPages/>
     </>
   )
 }
