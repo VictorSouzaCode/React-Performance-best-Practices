@@ -1,15 +1,29 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React, { Suspense } from "react";
 
-
-/*
-When building an app with multiple pages (using React Router), if you import all pages normally, React will bundle them all together.
-That means even if a user only visits /home, your /about and /contact code still loads at startup. 
-*/
-
-// With route-based code splitting, each page is loaded only when visited. This makes the first load much faster.
+// Lazy imports
+const Home = React.lazy(() => import("./Home"))
+const Contact = React.lazy(() => import("./Contact"))
+const Resume = React.lazy(() => import("./Resume"))
 
 const AllPages = () => {
   return (
-    <div>AllPages</div>
+      <Router>
+
+          <nav style={{ display: "flex", gap: "1rem" }}>
+              <Link to="/">Home</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/resume">Resume</Link>
+          </nav>
+          {/* Suspense wraps all lazy-loaded routes */}
+          <Suspense fallback={<div>Loading page...</div>}>
+              <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/resume" element={<Resume />} />
+              </Routes>
+          </Suspense>
+      </Router>
   )
 }
 
