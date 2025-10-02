@@ -17,6 +17,9 @@ import SplitState from './exercises/GranularityNStateManagement/bigState-SplitSt
 import OneBigContext from './exercises/GranularityNStateManagement/ContextGranularity/OneBigContext'
 import SplitContexts from './exercises/GranularityNStateManagement/ContextGranularity/SplitContexts'
 import SplitComponent from './exercises/GranularityNStateManagement/ContextGranularity/RealWorldExample/SplitComponent'
+import StoringDerived from './exercises/GranularityNStateManagement/derivedStateNStoredState/StoringDerived'
+import UsingDerived from './exercises/GranularityNStateManagement/derivedStateNStoredState/UsingDerived'
+import LazyComponent from './exercises/lazyLoading-CodeSpliting/lazy/LazyComponent'
 
 function App() {
 
@@ -46,9 +49,14 @@ function App() {
     {/* <BigState/>
     <SplitState/> */}
 
-    {/* <OneBigContext/> */}
-    {/* <SplitContexts/> */}
+    {/* <OneBigContext/>
+    <SplitContexts/> */}
     {/* <SplitComponent/> */}
+
+    {/* <StoringDerived/>
+    <UsingDerived/> */}
+
+    <LazyComponent/>
     </>
   )
 }
