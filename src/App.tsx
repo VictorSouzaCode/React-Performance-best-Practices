@@ -22,6 +22,7 @@ import UsingDerived from './exercises/GranularityNStateManagement/derivedStateNS
 import LazyComponent from './exercises/lazyLoading-CodeSpliting/lazy/LazyComponent'
 import AllPages from './exercises/lazyLoading-CodeSpliting/routeBase-CodeSplitting/AllPages'
 import MixOfComponents from './exercises/lazyLoading-CodeSpliting/conditional-lazy/MixOfComponents'
+import LazyLoadLargeLibrary from './exercises/lazyLoading-CodeSpliting/splittingLargeLibrary/LazyLoadLargeLibrary'
 
 
 function App() {
@@ -63,7 +64,9 @@ function App() {
 
     {/* <AllPages/> */}
 
-    <MixOfComponents/>
+    {/* <MixOfComponents/> */}
+
+    <LazyLoadLargeLibrary/>
     </>
   )
 }
