@@ -9,6 +9,8 @@ Without this, even memoized children would still re-render because the style obj
 
 // To really not re-render the card components on button clicks i need to use "React.memo/memo" in this card component
 
+// to not having to do that i can use css or just tailwind styles
+
 const cardStyle = { backgroundColor: "blue", padding: "20px", margin: "5px" }
 
 
