@@ -24,6 +24,8 @@ import AllPages from './exercises/lazyLoading-CodeSpliting/routeBase-CodeSplitti
 import MixOfComponents from './exercises/lazyLoading-CodeSpliting/conditional-lazy/MixOfComponents'
 import LazyLoadLargeLibrary from './exercises/lazyLoading-CodeSpliting/splittingLargeLibrary/LazyLoadLargeLibrary'
 import MainComponent from './exercises/lazyLoading-CodeSpliting/nestedLazyComponents/MainComponent'
+import BadContainer from "./exercises/unnecessaryDomWork/inlineStyle-MemoizedStyles/BadContainer"
+import GoodContainer from './exercises/unnecessaryDomWork/inlineStyle-MemoizedStyles/GoodContainer'
 
 
 function App() {
@@ -69,7 +71,10 @@ function App() {
 
     {/* <LazyLoadLargeLibrary/> */}
 
-    <MainComponent/>
+    {/* <MainComponent/> */}
+
+    {/* <BadContainer/> */}
+    <GoodContainer/>
     </>
   )
 }
