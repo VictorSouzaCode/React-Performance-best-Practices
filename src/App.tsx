@@ -23,6 +23,7 @@ import LazyComponent from './exercises/lazyLoading-CodeSpliting/lazy/LazyCompone
 import AllPages from './exercises/lazyLoading-CodeSpliting/routeBase-CodeSplitting/AllPages'
 import MixOfComponents from './exercises/lazyLoading-CodeSpliting/conditional-lazy/MixOfComponents'
 import LazyLoadLargeLibrary from './exercises/lazyLoading-CodeSpliting/splittingLargeLibrary/LazyLoadLargeLibrary'
+import MainComponent from './exercises/nestedLazyComponents/MainComponent'
 
 
 function App() {
@@ -66,7 +67,9 @@ function App() {
 
     {/* <MixOfComponents/> */}
 
-    <LazyLoadLargeLibrary/>
+    {/* <LazyLoadLargeLibrary/> */}
+
+    <MainComponent/>
     </>
   )
 }
