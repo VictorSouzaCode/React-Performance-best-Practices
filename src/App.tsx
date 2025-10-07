@@ -26,6 +26,13 @@ import LazyLoadLargeLibrary from './exercises/lazyLoading-CodeSpliting/splitting
 import MainComponent from './exercises/lazyLoading-CodeSpliting/nestedLazyComponents/MainComponent'
 import BadContainer from "./exercises/unnecessaryDomWork/inlineStyle-MemoizedStyles/BadContainer"
 import GoodContainer from './exercises/unnecessaryDomWork/inlineStyle-MemoizedStyles/GoodContainer'
+<<<<<<< HEAD
+=======
+import BadManipulation from './exercises/unnecessaryDomWork/directDOMManipulation/BadManipulation'
+import DOOMManipulation from './exercises/unnecessaryDomWork/directDOMManipulation/DOOMManipulation'
+import Recalculation from './exercises/unnecessaryDomWork/ForcedLayoutRecalculation/Recalculation'
+
+>>>>>>> 40a6f1b (new lessons completed)
 
 
 function App() {
@@ -73,8 +80,17 @@ function App() {
 
     {/* <MainComponent/> */}
 
+<<<<<<< HEAD
     {/* <BadContainer/> */}
     <GoodContainer/>
+=======
+    {/* <BadContainer/>
+    <GoodContainer/> */}
+
+    {/* <DOOMManipulation/> */}
+
+    <Recalculation/>
+>>>>>>> 40a6f1b (new lessons completed)
     </>
   )
 }

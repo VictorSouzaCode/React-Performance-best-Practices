@@ -13,6 +13,11 @@ Pair with React.memo to skip child re-renders when props don’t change.
 Extracting style outside the component prevents unnecessary prop changes.
 
 But to skip child renders, you need React.memo inside the card component.
+<<<<<<< HEAD
+=======
+
+Or use tailwind or css classes
+>>>>>>> 40a6f1b (new lessons completed)
 */
 
 const GoodContainer = () => {
