@@ -140,8 +140,6 @@ Browser DevTools help track slow renders and large bundles.
 
 Theory takeaway → Performance work is about measurement + optimization, not premature tweaks.
 
-testing some changes
-
 ---
 
 ### Summary of the theory
