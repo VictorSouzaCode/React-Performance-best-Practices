@@ -2,7 +2,7 @@
 
 const GoodAnimationsCSS = () => {
   return (
-    <div>GoodAnimationsCSS</div>
+    <div>GoodAnimationsCSS sss</div>
   )
 }
 
