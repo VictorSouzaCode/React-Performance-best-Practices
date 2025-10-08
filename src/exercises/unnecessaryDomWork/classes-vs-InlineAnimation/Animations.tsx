@@ -8,7 +8,6 @@ const Animations = () => {
     <div>
         <BadAnimations/>
         <GoodAnimationsCSS/>
-        <GoodAnimationsCSS/>
         <GoodAnimationTailwind/>
         <FullTailwindControl/>
     </div>

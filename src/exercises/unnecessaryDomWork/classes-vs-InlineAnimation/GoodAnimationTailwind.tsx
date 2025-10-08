@@ -1,39 +1,39 @@
 
 
 /*
-What’s going on here
+Here’s how professionals do it using Tailwind’s transition utilities — React only toggles a class, not inline styles. */
 
-Every ~16ms:
+// Tailwind transition utilities (transition-transform duration-200 ease-in-out)
+// Offloads animation to CSS instead of React re-renders.
+// Toggling a class (scale-110 / scale-100)
+// Changes happen in the compositor thread (GPU), not React’s main thread.
+// Single render per click
+// React only updates the class once, no continuous re-rendering.
+// Scales beautifully
+// Works efficiently even with 100+ animated elements.
 
-setRotation() updates React state.
+import { useState } from "react";
 
-React re-renders the entire component.
-
-The style prop creates a new object each render ({ transform: "rotate(..." }).
-
-React updates the DOM’s transform property.
-
-The browser recalculates layout, paints, and composites again.
-
-So you’re asking React + the JS thread to handle 60 updates per second 🤯.
-
-If you had 50 buttons like that?
-→ 50 re-renders per frame × 60 frames per second = 3000 React updates per second.
-→ 💥 CPU spike, jank, lag.
-
-Why this hurts performance
-
-React is not designed for frame-by-frame animation. It’s great for declarative UI, but slow for continuous updates.
-
-Each setState → re-render → reconciliation → DOM diff → paint.
-
-The browser’s animation engine (CSS transitions, keyframes, or the compositor) is much faster — it can run animations on the GPU, outside the JS thread.
-*/
 
 const GoodAnimationTailwind = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(true);
+    setTimeout(() => setClicked(false), 200); // remove class after animation
+  };
+
   return (
-    <div>GoodAnimationTailwind</div>
-  )
+    <button
+      onClick={handleClick}
+      className={`
+        bg-blue-500 text-white px-4 py-2 rounded transition-transform duration-200 ease-in-out
+        ${clicked ? "scale-110" : "scale-100"}
+      `}
+    >
+      Click Me
+    </button>
+  );
 }
 
 export default GoodAnimationTailwind
