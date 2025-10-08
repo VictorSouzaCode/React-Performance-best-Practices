@@ -87,7 +87,7 @@ function App() {
     <GoodContainer/> */}
 
     {/* <DOOMManipulation/> */}
-    {/* <Recalculation/> */}
+    
     {/* <Recalculation/> */}
 
     <Animations/>
