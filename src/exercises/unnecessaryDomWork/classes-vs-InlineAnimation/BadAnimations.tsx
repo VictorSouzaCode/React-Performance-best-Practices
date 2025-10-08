@@ -41,6 +41,8 @@ const BadAnimations = () => {
   }, []);
 
   return (
+    <div>
+      Bad Animation
     <button
       style={{
         transform: `rotate(${rotation}deg)`,
@@ -53,6 +55,7 @@ const BadAnimations = () => {
     >
       🔄
     </button>
+    </div>
   );
 }
 export default BadAnimations

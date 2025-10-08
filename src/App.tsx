@@ -78,7 +78,7 @@ function App() {
     {/* <MainComponent/> */}
 
     {/* <BadContainer/> */}
-    <GoodContainer/>
+    {/* <GoodContainer/> */}
 
     {/* <BadContainer/> */}
     {/* <GoodContainer/> */}
@@ -87,7 +87,7 @@ function App() {
     <GoodContainer/> */}
 
     {/* <DOOMManipulation/> */}
-    <Recalculation/>
+    {/* <Recalculation/> */}
     {/* <Recalculation/> */}
 
     <Animations/>

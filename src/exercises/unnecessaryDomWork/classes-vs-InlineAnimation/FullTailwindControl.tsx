@@ -4,11 +4,14 @@
 
 const FullTailwindControl = () => {
   return (
+    <div>
+      full tailwind style
     <button
       className="bg-blue-500 text-white px-4 py-2 rounded transition-transform duration-200 ease-in-out active:scale-110"
     >
       Click Me
     </button>
+    </div>
   );
 }
 

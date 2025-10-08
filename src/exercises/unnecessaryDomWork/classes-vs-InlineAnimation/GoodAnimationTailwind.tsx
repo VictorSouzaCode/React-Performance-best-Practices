@@ -24,6 +24,8 @@ const GoodAnimationTailwind = () => {
   };
 
   return (
+    <div>
+      animation tailwind plus react
     <button
       onClick={handleClick}
       className={`
@@ -33,6 +35,7 @@ const GoodAnimationTailwind = () => {
     >
       Click Me
     </button>
+    </div>
   );
 }
 

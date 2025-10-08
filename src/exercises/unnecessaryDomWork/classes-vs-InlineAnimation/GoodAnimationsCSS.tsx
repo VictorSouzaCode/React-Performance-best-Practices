@@ -8,7 +8,7 @@ import "./GoodAnimation.css"
 const GoodAnimationsCSS = () => {
 
   return (
-    <div>GoodAnimationsCSS
+    <div>Animations Pure CSS
       <button className="animated-btn">
         🔄
       </button>
