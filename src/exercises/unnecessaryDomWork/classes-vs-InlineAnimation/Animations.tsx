@@ -5,7 +5,7 @@ import FullTailwindControl from "./FullTailwindControl"
 
 const Animations = () => {
   return (
-    <div>ssss
+    <div>
         <BadAnimations/>
         <GoodAnimationsCSS/>
         <GoodAnimationsCSS/>
